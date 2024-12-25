@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOCX Viewer</title>
+  <style>
+    body { 
+      width: 300px; 
+      padding: 10px; 
+      font-family: Arial, sans-serif; 
+    }
+    #fileInput { margin-bottom: 10px; }
+    #fileContent { 
+      max-height: 400px; 
+      overflow-y: auto; 
+      border: 1px solid #ccc; 
+      padding: 10px; 
+    }
+  </style>
+  <script src="libs/mammoth.browser.min.js"></script>
+</head>
+<body>
+  <input type="file" id="fileInput" accept=".docx">
+  <div id="fileContent"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
