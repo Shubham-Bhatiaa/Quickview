@@ -2,25 +2,22 @@
 <html>
 <head>
   <title>DOCX Viewer</title>
-  <style>
-    body { 
-      width: 300px; 
-      padding: 10px; 
-      font-family: Arial, sans-serif; 
-    }
-    #fileInput { margin-bottom: 10px; }
-    #fileContent { 
-      max-height: 400px; 
-      overflow-y: auto; 
-      border: 1px solid #ccc; 
-      padding: 10px; 
-    }
+  <link rel="stylesheet" href="popup.css">
+  <style >
+    /* General Reset */
+   
   </style>
   <script src="libs/mammoth.browser.min.js"></script>
 </head>
 <body>
-  <input type="file" id="fileInput" accept=".docx">
-  <div id="fileContent"></div>
+  <div class="container">
+    <button class="cross-button" id="crossButton">X</button>
+    <h1>DOCX Viewer</h1>
+    <input type="file" id="fileInput" accept=".docx">
+    <label for="fileInput" class="file-input-label">Upload DOCX File</label>
+    <div id="fileContent"></div>
+    <div class="footer">Drag & drop or click to upload</div>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
